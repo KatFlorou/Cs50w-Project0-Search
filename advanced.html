@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Metadata-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Katerina Florou">
+        <meta name="description" content="Project 0 for CS50w - Creating a front end for Google Search">
+        <!--Link to CSS file-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Page title-->
+        <title>Google Advanced Search</title>
+    </head>
+    <body>
+        <!--Links to Images Search and Advanced Search-->
+        <nav class="nav_container">
+            <a href="index.html"><abbr title="Go to Google Home" class="nostyle">Search</abbr></a>
+        </nav> 
+        <!--Company Logo-->
+        <figure class="logo_container">
+            <div class="position">
+                <img src="googlelogo_color_272x92dp.png" alt="google logo" class="goolge_logo"/>
+                <span class="logo_span color_red">advanced search</span>
+            </div>
+        </figure>
+        <!--Search Form-->
+        <form action="https://www.google.com/search" id="adv_form">
+            <div class="input_container">
+                <h3 class="form_header">Find pages with...</h3>
+                <p>all these words:</p>
+                <input type="text" name="as_q" class="advanced_input">
+                <p>this exact word or phrase:</p>
+                <input type="text" name="as_epq" class="advanced_input">
+                <p>any of these words:</p>
+                <input type="text" name="as_oq" class="advanced_input">
+                <p>none of these words:</p>
+                <input type="text" name="as_eq" class="advanced_input">
+            </div>
+            <div class="submit_container btn_right">
+                <input type="submit" value="Advanced Search" class="adv_btn inp_sub">
+            </div>
+        </form>
+    </body>
+</html>
